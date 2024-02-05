@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: #40A2E3;
+}
+
+.container div{
+    padding:15px ;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.article {
+    background-color: #bccbde;
+  }
+  
+  .article p {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
+  }
+  
+  .article .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+  }
+  
+  .card p {
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  
+  .card .title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+
