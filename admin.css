@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: Roboto, sans-serif;
 }
 .header{
 
@@ -16,11 +17,8 @@
 
 
 
-.card{
-  width: 100px;
-  height: 100px;
-  border: 3px solid black;
-}
+
+
 
 
 
@@ -29,7 +27,7 @@
 .container{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto;
+  grid-template-rows: .3fr 1fr;
   grid-template-areas: 
   "sidebar header"
   "sidebar main"
@@ -46,6 +44,7 @@
 }
 .main{
   grid-area: main;
+  background-color: #dadada;
 }
 
 .side1, .side2, .side3, .side4, .side5, .side6, .side7, .side8, .side9, .side10{
@@ -115,6 +114,7 @@
 grid-template-areas:
 "search input notification avatar name"
 ;
+
 }
 
 .search-img{
@@ -152,6 +152,7 @@ p{
   grid-area: profile;
   display: grid;
   grid-template-columns:2fr 1fr;
+  
 }
 
 button{
@@ -166,15 +167,44 @@ button{
 .header-buttons{
   align-self: center;
   margin-right: 10px;
+  
 }
 
+.main{
+  display: grid;
+  grid-template-columns: 4fr 1.5fr ;
+}
 
+.main-left .card{
+  height: 200px;
+  background-color: #fff;
 
+}
 
+.main-left{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  margin-bottom: 70px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
 
+.main .title{
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 35px;
+  
+}
 
+.svg-star, .svg-eye,.svg-link{
+  width: 25px;
+}
 
-
+.card p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 
 .search-input:focus{
@@ -183,4 +213,63 @@ button{
   font-weight: bold;
   font-size: 18px;
   outline: none;
+}
+
+
+.card{
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  place-items: start end;
+}
+
+.card-svg{
+  margin-right: 10px;
+  
+}
+
+.card{
+  box-shadow:-8px 0px  rgba(255, 165, 0, 0.5); 
+  border-radius: 20px;
+}
+
+.announcements{
+  background-color: white;
+  margin-top: 1.3rem;
+  margin-left: 15px;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.up,.middle{
+  border-bottom: 2px solid rgb(219, 204, 204, 0.7);
+  margin-bottom: 15px;
+
+}
+
+.announce-title{
+  font-weight: bold;
+}
+
+.trending-avatar{
+  width: 50px;
+}
+
+.trending{
+  margin-left: 15px;
+  margin-top: 6.4rem;
+  background-color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: repeat(4, 0.25fr)
+}
+
+.first, .second{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  
+}
+
+.transparent{
+  color: rgba(0,0,0,0.5);
 }
